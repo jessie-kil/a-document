@@ -47,25 +47,1366 @@ table {
 	border-spacing: 0;
 }
 /* ---------------------------------------------------------------- */
+@media print {
+  body {
+    background: white;
+  }
+}
 
+@page {
+  size: 5in 8in;
+  margin-top: 0.25in;
+  margin-bottom: 0in;
+}
+
+/* 1ST PAGE */
+
+@page:first{
+  background-color: #2334af;
+  }
+
+.coverpage h1{
+    font-size: 64pt;
+    font-family: helvetica;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+    line-height: 0.9;
+  }
+
+.coverpage h2 {
+    font-size: 60pt;
+    color: white;
+    font-family: helvetica;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+
+.coverpageimg {
+    justify-content: center;
+    margin-bottom:10px;
+  }
+
+.coverpage h3{
+    break-after: page;
+    font-size: 46pt;
+    font-family: helvetica;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+    line-height: 1;
+    text-align: right;
+    padding-top: 20px;
+}
+  
+
+  /* END OF 1ST PAGE */
+
+  /* START OF 2ND PAGE */
+
+.secondpage h1{
+    font-size: 50pt;
+    font-family: helvetica;
+    margin: 0;
+    font-weight: normal;
+    color: #2334af;
+    line-height: 0.2;
+    margin-top: 25px;
+  }
+
+.secondpage h2 {
+    font-size: 50pt;
+    color: #2334af;
+    font-family: helvetica;
+    font-weight: normal;
+    margin-top: 20px;
+    text-align: right;
+  }
+
+  .profilepic1{
+    position: absolute;
+    margin-top: 125px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,5vw);
+    grid-gap: 20px;
+    grid-row-gap: 160px;
+    }
+
+
+  .profilenames1{
+    position: absolute;
+    margin-top: 265px;
+    font-size: 12pt;
+    color: #2334af;
+    font-family: helvetica;
+    font-weight: normal;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,5vw);
+    grid-gap: 20px;
+    grid-row-gap: 160px;
+    break-after: page;
+    margin-left: -5px;
+  }
+ /* END OF 2ND PAGE */
+
+ /* START OF 3RD PAGE */
+ .profilepic2{
+  position: absolute;
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,5vw);
+  grid-gap: 20px;
+  grid-row-gap: 160px;
+  }
+
+
+.profilenames2{
+  position: absolute;
+  margin-top: 140px;
+  font-size: 12pt;
+  color: #2334af;
+  font-family: helvetica;
+  font-weight: normal;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,5vw);
+  grid-gap: 20px;
+  grid-row-gap: 160px;
+  break-after: page;
+  margin-left: 6px;
+}
+/* START OF 4TH PAGE */
+
+.fourthpage h1{
+    font-size: 30pt;
+    font-family: helvetica;
+    margin: 0;
+    font-weight: lighter;
+    color: #2334af;
+    line-height: 1;
+    margin-top: 23px;
+}
+
+.fourthpage h2{
+  font-size: 20pt;
+  font-family: helvetica;
+  font-weight: bold;
+  color: #2334af;
+  line-height: 1;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.super1img{
+  position: absolute;
+  align-items: right;
+  margin-top:10px;
+}
+
+.fourthpage h3{
+  font-size: 12pt;
+  font-family: helvetica;
+  margin: 0;
+  font-weight: lighter;
+  color: #2334af;
+  line-height: 1;
+  margin-left: 285px;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+
+.fourthpage h4{
+  font-size: 12pt;
+  font-family: helvetica;
+  margin: 0;
+  font-weight: lighter;
+  color: #2334af;
+  line-height: 1;
+  margin-left: 0px;
+  margin-right: 30px;
+  margin-top: 35px;
+}
+
+
+.fourthpage h5{
+  font-size: 9pt;
+  font-family: helvetica;
+  margin: 0;
+  font-weight: lighter;
+  color: #2334af;
+  line-height: 1;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.fourthpage h6{
+  font-size: 115pt;
+  font-family: helvetica;
+  margin: 0;
+  font-weight: bold;
+  color: #2334af;
+  margin-left: 15px;
+  margin-top: 7px;
+  break-after: page;
+}
+/* END OF 4TH PAGE */
+
+/* START OF 5TH PAGE */
+
+.fifthpage h1{
+  font-size: 30pt;
+  font-family: helvetica;
+  margin: 0;
+  font-weight: lighter;
+  color: #2334af;
+  line-height: 1;
+  margin-top: 23px;
+}
+
+.fifthpage h2{
+font-size: 20pt;
+font-family: helvetica;
+font-weight: bold;
+color: #2334af;
+line-height: 1;
+margin-top: 30px;
+margin-right: 20px;
+}
+
+.super2img{
+position: absolute;
+align-items: right;
+margin-top:10px;
+}
+
+.fifthpage h3{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 285px;
+margin-right: 30px;
+margin-top: 10px;
+}
+
+
+.fifthpage h4{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 0px;
+margin-right: 30px;
+margin-top: 20px;
+}
+
+
+.fifthpage h5{
+font-size: 9pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 30px;
+margin-right: 30px;
+text-align: center;
+margin-top: 33px;
+}
+
+.fifthpage h6{
+font-size: 115pt;
+font-family: helvetica;
+margin: 0;
+font-weight: bold;
+color: #2334af;
+margin-left: 40px;
+margin-top: 7px;
+break-after: page;
+}
+/* END OF 5TH PAGE */
+
+/* START OF 6TH PAGE */
+
+.sixthpage h1{
+  font-size: 30pt;
+  font-family: helvetica;
+  margin: 0;
+  font-weight: lighter;
+  color: #2334af;
+  line-height: 1;
+  margin-top: 23px;
+}
+
+.sixthpage h2{
+font-size: 20pt;
+font-family: helvetica;
+font-weight: bold;
+color: #2334af;
+line-height: 1;
+margin-top: 30px;
+margin-right: 20px;
+}
+
+.super3img{
+position: absolute;
+align-items: right;
+margin-top:10px;
+}
+
+.sixthpage h3{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 285px;
+margin-right: 30px;
+margin-top: 10px;
+}
+
+
+.sixthpage h4{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 0px;
+margin-right: 30px;
+margin-top: 5px;
+}
+
+
+.sixthpage h5{
+font-size: 9pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 30px;
+margin-right: 30px;
+text-align: center;
+margin-top: 30px;
+}
+
+.sixthpage h6{
+font-size: 115pt;
+font-family: helvetica;
+margin: 0;
+font-weight: bold;
+color: #2334af;
+margin-left: 40px;
+margin-top: 7px;
+break-after: page;
+}
+/* END OF 6TH PAGE */
+
+
+/* START OF 7TH PAGE */
+
+.seventhpage h1{
+  font-size: 30pt;
+  font-family: helvetica;
+  margin: 0;
+  font-weight: lighter;
+  color: #2334af;
+  line-height: 1;
+  margin-top: 23px;
+}
+
+.seventhpage h2{
+font-size: 20pt;
+font-family: helvetica;
+font-weight: bold;
+color: #2334af;
+line-height: 1;
+margin-top: 30px;
+margin-right: 20px;
+}
+
+.super4img{
+position: absolute;
+align-items: right;
+margin-top:10px;
+}
+
+.seventhpage h3{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 285px;
+margin-right: 30px;
+margin-top: 10px;
+}
+
+
+.seventhpage h4{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 0px;
+margin-right: 30px;
+margin-top: 75px;
+}
+
+
+.seventhpage h5{
+font-size: 9pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 30px;
+margin-right: 30px;
+text-align: center;
+margin-top: -50px;
+}
+
+.seventhpage h6{
+font-size: 115pt;
+font-family: helvetica;
+margin: 0;
+font-weight: bold;
+color: #2334af;
+margin-left: 25px;
+margin-top: 20px;
+break-after: page;
+}
+/* END OF 7TH PAGE */
+
+
+
+/* START OF 8TH PAGE */
+
+.eightpage h1{
+  font-size: 30pt;
+  font-family: helvetica;
+  margin: 0;
+  font-weight: lighter;
+  color: #2334af;
+  line-height: 1;
+  margin-top: 23px;
+}
+
+.eightpage h2{
+font-size: 20pt;
+font-family: helvetica;
+font-weight: bold;
+color: #2334af;
+line-height: 1;
+margin-top: 30px;
+margin-right: 20px;
+}
+
+.super5img{
+position: absolute;
+align-items: right;
+margin-top:10px;
+}
+
+.eightpage h3{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 285px;
+margin-right: 30px;
+margin-top: 10px;
+}
+
+
+.eightpage h4{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 0px;
+margin-right: 30px;
+margin-top: 5px;
+}
+
+
+.eightpage h5{
+font-size: 9pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 30px;
+margin-right: 30px;
+text-align: center;
+margin-top: 35px;
+}
+
+.eightpage h6{
+font-size: 115pt;
+font-family: helvetica;
+margin: 0;
+font-weight: bold;
+color: #2334af;
+margin-left: 20px;
+margin-top: 11px;
+break-after: page;
+}
+/* END OF 8TH PAGE */
+
+
+
+/* START OF 9TH PAGE */
+
+.ninthpage h1{
+  font-size: 30pt;
+  font-family: helvetica;
+  margin: 0;
+  font-weight: lighter;
+  color: #2334af;
+  line-height: 1;
+  margin-top: 23px;
+}
+
+.ninthpage h2{
+font-size: 20pt;
+font-family: helvetica;
+font-weight: bold;
+color: #2334af;
+line-height: 1;
+margin-top: 30px;
+margin-right: 20px;
+}
+
+.super6img{
+position: absolute;
+align-items: right;
+margin-top:10px;
+}
+
+.ninthpage h3{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 285px;
+margin-right: 30px;
+margin-top: 10px;
+}
+
+
+.ninthpage h4{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 0px;
+margin-right: 30px;
+margin-top: 5px;
+}
+
+
+.ninthpage h5{
+font-size: 9pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 30px;
+margin-right: 30px;
+text-align: center;
+margin-top: 35px;
+}
+
+.ninthpage h6{
+font-size: 115pt;
+font-family: helvetica;
+margin: 0;
+font-weight: bold;
+color: #2334af;
+margin-left: 45px;
+margin-top: 2px;
+break-after: page;
+}
+/* END OF 9TH PAGE */
+
+
+/* START OF 10TH PAGE */
+
+.tenthpage h1{
+  font-size: 30pt;
+  font-family: helvetica;
+  margin: 0;
+  font-weight: lighter;
+  color: #2334af;
+  line-height: 1;
+  margin-top: 23px;
+}
+
+.tenthpage h2{
+font-size: 20pt;
+font-family: helvetica;
+font-weight: bold;
+color: #2334af;
+line-height: 1;
+margin-top: 30px;
+margin-right: 20px;
+}
+
+.super7img{
+position: absolute;
+align-items: right;
+margin-top:10px;
+}
+
+.tenthpage h3{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 285px;
+margin-right: 30px;
+margin-top: 10px;
+}
+
+
+.tenthpage h4{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 0px;
+margin-right: 30px;
+margin-top: 20px;
+}
+
+
+.tenthpage h5{
+font-size: 9pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 30px;
+margin-right: 30px;
+text-align: center;
+margin-top: 35px;
+}
+
+.tenthpage h6{
+font-size: 115pt;
+font-family: helvetica;
+margin: 0;
+font-weight: bold;
+color: #2334af;
+margin-left: 20px;
+margin-top: 2px;
+break-after: page;
+}
+/* END OF 10th PAGE */
+
+/* START OF 11TH PAGE */
+
+.elevenpage h1{
+  font-size: 30pt;
+  font-family: helvetica;
+  margin: 0;
+  font-weight: lighter;
+  color: #2334af;
+  line-height: 1;
+  margin-top: 23px;
+}
+
+.elevenpage h2{
+font-size: 20pt;
+font-family: helvetica;
+font-weight: bold;
+color: #2334af;
+line-height: 1;
+margin-top: 30px;
+margin-right: 20px;
+}
+
+.super8img{
+position: absolute;
+align-items: right;
+margin-top:10px;
+}
+
+.elevenpage h3{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 285px;
+margin-right: 30px;
+margin-top: 10px;
+}
+
+
+.elevenpage h4{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 0px;
+margin-right: 30px;
+margin-top: 70px;
+}
+
+
+.elevenpage h5{
+font-size: 9pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 30px;
+margin-right: 30px;
+text-align: center;
+margin-top: -45px;
+}
+
+.elevenpage h6{
+font-size: 115pt;
+font-family: helvetica;
+margin: 0;
+font-weight: bold;
+color: #2334af;
+margin-left: 50px;
+margin-top: 0px;
+break-after: page;
+}
+/* END OF 11th PAGE */
+
+/* START OF 12TH PAGE */
+
+.twelvepage h1{
+  font-size: 30pt;
+  font-family: helvetica;
+  margin: 0;
+  font-weight: lighter;
+  color: #2334af;
+  line-height: 1;
+  margin-top: 23px;
+}
+
+.twelvepage h2{
+font-size: 20pt;
+font-family: helvetica;
+font-weight: bold;
+color: #2334af;
+line-height: 1;
+margin-top: 30px;
+margin-right: 20px;
+}
+
+.super9img{
+position: absolute;
+align-items: right;
+margin-top:10px;
+}
+
+.twelvepage h3{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 285px;
+margin-right: 30px;
+margin-top: 10px;
+}
+
+
+.twelvepage h4{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 0px;
+margin-right: 30px;
+margin-top: 50px;
+}
+
+
+.twelvepage h5{
+font-size: 9pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 30px;
+margin-right: 30px;
+text-align: center;
+margin-top: 2px;
+}
+
+.twelvepage h6{
+font-size: 115pt;
+font-family: helvetica;
+margin: 0;
+font-weight: bold;
+color: #2334af;
+margin-left: 15px;
+margin-top: -5px;
+break-after: page;
+}
+/* END OF 12TH PAGE */
+
+
+/* START OF 13TH PAGE */
+
+.thirteenpage h1{
+  font-size: 30pt;
+  font-family: helvetica;
+  margin: 0;
+  font-weight: lighter;
+  color: #2334af;
+  line-height: 1;
+  margin-top: 23px;
+}
+
+.thirteenpage h2{
+font-size: 20pt;
+font-family: helvetica;
+font-weight: bold;
+color: #2334af;
+line-height: 1;
+margin-top: 30px;
+margin-right: 20px;
+}
+
+.super10img{
+position: absolute;
+align-items: right;
+margin-top:10px;
+}
+
+.thirteenpage h3{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 285px;
+margin-right: 30px;
+margin-top: 10px;
+}
+
+
+.thirteenpage h4{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 0px;
+margin-right: 30px;
+margin-top: 70px;
+}
+
+
+.thirteenpage h5{
+font-size: 9pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 30px;
+margin-right: 30px;
+text-align: center;
+margin-top: -20px;
+}
+
+.thirteenpage h6{
+font-size: 115pt;
+font-family: helvetica;
+margin: 0;
+font-weight: bold;
+color: #2334af;
+margin-left: 15px;
+margin-top: -5px;
+break-after: page;
+}
+/* END OF 13TH PAGE */
+
+
+
+/* START OF 14TH PAGE */
+
+.fourteenpage h1{
+  font-size: 30pt;
+  font-family: helvetica;
+  margin: 0;
+  font-weight: lighter;
+  color: #2334af;
+  line-height: 1;
+  margin-top: 23px;
+}
+
+.fourteenpage h2{
+font-size: 20pt;
+font-family: helvetica;
+font-weight: bold;
+color: #2334af;
+line-height: 1;
+margin-top: 30px;
+margin-right: 20px;
+}
+
+.super11img{
+position: absolute;
+align-items: right;
+margin-top:10px;
+}
+
+.fourteenpage h3{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 285px;
+margin-right: 30px;
+margin-top: 10px;
+}
+
+
+.fourteenpage h4{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 0px;
+margin-right: 30px;
+margin-top: 25px;
+}
+
+
+.fourteenpage h5{
+font-size: 9pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 30px;
+margin-right: 30px;
+text-align: center;
+margin-top: 75px;
+}
+
+.fourteenpage h6{
+font-size: 115pt;
+font-family: helvetica;
+margin: 0;
+font-weight: bold;
+color: #2334af;
+margin-left: 20px;
+margin-top: 11px;
+break-after: page;
+}
+/* END OF 14TH PAGE */
+
+/* START OF 15TH PAGE */
+
+.fifteenpage h1{
+  font-size: 30pt;
+  font-family: helvetica;
+  margin: 0;
+  font-weight: lighter;
+  color: #2334af;
+  line-height: 1;
+  margin-top: 23px;
+}
+
+.fifteenpage h2{
+font-size: 20pt;
+font-family: helvetica;
+font-weight: bold;
+color: #2334af;
+line-height: 1;
+margin-top: 30px;
+margin-right: 20px;
+}
+
+.super12img{
+position: absolute;
+align-items: right;
+margin-top:10px;
+}
+
+.fifteenpage h3{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 285px;
+margin-right: 30px;
+margin-top: 10px;
+}
+
+
+.fifteenpage h4{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 0px;
+margin-right: 30px;
+margin-top: 25px;
+}
+
+
+.fifteenpage h5{
+font-size: 9pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 30px;
+margin-right: 30px;
+text-align: center;
+margin-top: 75px;
+}
+
+.fifteenpage h6{
+font-size: 115pt;
+font-family: helvetica;
+margin: 0;
+font-weight: bold;
+color: #2334af;
+margin-left: 20px;
+margin-top: 11px;
+break-after: page;
+}
+/* END OF 15TH PAGE */
+
+
+/* START OF 16TH PAGE */
+
+.sixteenpage h1{
+  font-size: 30pt;
+  font-family: helvetica;
+  margin: 0;
+  font-weight: lighter;
+  color: #2334af;
+  line-height: 1;
+  margin-top: 23px;
+}
+
+.sixteenpage h2{
+font-size: 20pt;
+font-family: helvetica;
+font-weight: bold;
+color: #2334af;
+line-height: 1;
+margin-top: 30px;
+margin-right: 20px;
+}
+
+.super13img{
+position: absolute;
+align-items: right;
+margin-top:10px;
+}
+
+.sixteenpage h3{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 285px;
+margin-right: 30px;
+margin-top: 10px;
+}
+
+
+.sixteenpage h4{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 0px;
+margin-right: 30px;
+margin-top: 20px;
+}
+
+
+.sixteenpage h5{
+font-size: 9pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 30px;
+margin-right: 30px;
+text-align: center;
+margin-top: 55px;
+}
+
+.sixteenpage h6{
+font-size: 115pt;
+font-family: helvetica;
+margin: 0;
+font-weight: bold;
+color: #2334af;
+margin-left: 10px;
+margin-top: 11px;
+break-after: page;
+}
+/* END OF 16TH PAGE */
+
+
+/* START OF 17TH PAGE */
+
+.seventeenpage h1{
+  font-size: 30pt;
+  font-family: helvetica;
+  margin: 0;
+  font-weight: lighter;
+  color: #2334af;
+  line-height: 1;
+  margin-top: 23px;
+}
+
+.seventeenpage h2{
+font-size: 20pt;
+font-family: helvetica;
+font-weight: bold;
+color: #2334af;
+line-height: 1;
+margin-top: 30px;
+margin-right: 20px;
+}
+
+.super14img{
+position: absolute;
+align-items: right;
+margin-top:10px;
+}
+
+.seventeenpage h3{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 285px;
+margin-right: 30px;
+margin-top: 10px;
+}
+
+
+.seventeenpage h4{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 0px;
+margin-right: 30px;
+margin-top: 40px;
+}
+
+
+.seventeenpage h5{
+font-size: 9pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 30px;
+margin-right: 30px;
+text-align: center;
+margin-top: 55px;
+}
+
+.seventeenpage h6{
+font-size: 115pt;
+font-family: helvetica;
+margin: 0;
+font-weight: bold;
+color: #2334af;
+margin-left: 15px;
+margin-top: 11px;
+break-after: page;
+}
+/* END OF 17TH PAGE */
+
+
+
+/* START OF 18TH PAGE */
+
+.eighteenpage h1{
+  font-size: 30pt;
+  font-family: helvetica;
+  margin: 0;
+  font-weight: lighter;
+  color: #2334af;
+  line-height: 1;
+  margin-top: 23px;
+}
+
+.eighteenpage h2{
+font-size: 20pt;
+font-family: helvetica;
+font-weight: bold;
+color: #2334af;
+line-height: 1;
+margin-top: 30px;
+margin-right: 20px;
+}
+
+.super15img{
+position: absolute;
+align-items: right;
+margin-top:10px;
+}
+
+.eighteenpage h3{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 285px;
+margin-right: 30px;
+margin-top: 10px;
+}
+
+
+.eighteenpage h4{
+font-size: 12pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 0px;
+margin-right: 30px;
+margin-top: 70px;
+}
+
+
+.eighteenpage h5{
+font-size: 9pt;
+font-family: helvetica;
+margin: 0;
+font-weight: lighter;
+color: #2334af;
+line-height: 1;
+margin-left: 30px;
+margin-right: 30px;
+text-align: center;
+margin-top: -40px;
+}
+
+.eighteenpage h6{
+font-size: 115pt;
+font-family: helvetica;
+margin: 0;
+font-weight: bold;
+color: #2334af;
+margin-left: 40px;
+margin-top: 8px;
+break-after: page;
+
+/* END OF 18TH PAGE */
+
+
+
+
+
+@page:left {
+  margin-left: 0.25in;
+  margin-right: 0.15in;
+  background-color: white;
+  font: white;
+  @bottom-left {
+  }
+}
+@page:right {
+  margin-left: 0.25in;
+  margin-right: 0.15in;
+  /* @bottom-left {
+    content:"MBTI"; */
+  }
+  @bottom-right {
+    content: counter(page);
+  }
+
+  /* ------------------------------------------ */
 body {
   font-family: sans-serif;
   background: lightgray;
   counter-reset: page;
   font-size: 8.5pt;
 }
-
-h1{
-  font-size: 23pt;
-  font-family: arial;
-  margin: 1em 0;
-}
-
-h2 {
-  break-before: page;
-  font-size: 17pt;
-}
-
 
 .two-col {
   column-count: 2;
@@ -77,43 +1418,4 @@ p:first-child {
 }
 
 /* I can also to break-before: right, this will always put h2 on the right side */
-
-@media print {
-  body {
-    background: white;
-  }
-}
-
-@page {
-  size: 5in 8in;
-  margin-top: 0.25in;
-  margin-bottom: 0.5in;
-}
-
-@page:left {
-  margin-left: 0.25in;
-  margin-right: 1in;
-  @bottom-left {
-    content: counter(page);
-  }
-  @bottom-right {
-    content:"Emojis?!?";
-  }
-}
-@page:right {
-  margin-left: 1in;
-  margin-right: 0.25in;
-  @bottom-left {
-    content:"Jessie Kil";
-  }
-  @bottom-right {
-    content: counter(page);
-  }
-}
-
-/* 
-img.faces{
-  width: 1in;
-} */
-
 
